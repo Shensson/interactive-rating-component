@@ -12,7 +12,7 @@
 
 </head>
 <body>
-  <div class="rating-card" id="gradient" style="display: block;">
+  <div class="rating-card gradient" style="display: block;">
     <div class="star-icon">
       <img class="icon-box" src="images/icon-star.svg" alt="">
     </div>
@@ -31,22 +31,22 @@
         <button class="interactable-5" onclick="youSelected5()">5</button>
     </div>
     <div class="submit-button">
-      <button class="submit">Submit</button>
+      <button class="submit" onclick="changeCards()">Submit</button>
     </div>
   </div>
-  <div class="thank-you-card" id="gradient">
+  <div class="thank-you-card gradient" id="after">
     <img class="image" src="images/illustration-thank-you.svg" alt="">
-    <div class="you-selected" id="result">
-      <p>You selected out of 5</p>
+    <div class="you-selected" id="result">You selected out of 5
     </div>
     <h1>Thank you!</h1>
     <p>We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>
   </div>
 
-  <script>document.getElementsByClassName("submit").onclick = function() {
-    document.getElementsByClassName("rating-card").element.style.display = "none";
-    document.getElementsByClassName("thank-you-card").element.style.display = "block";
-}</script>
+  <script>
+    function changeCards(){
+      document.getElementById("after").style.zIndex = "2";
+    }
+  </script>
 </body>
 </html>

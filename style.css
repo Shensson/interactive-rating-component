@@ -3,10 +3,11 @@
 }
 
 body{
-    max-width: 500px;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 20px;
     background-color: hsl(216, 12%, 8%);
 }
@@ -14,22 +15,14 @@ body{
 h1{
     color: white;
 }
-p{
-    color: hsl(217, 12%, 63%);
-    font-size: 15px;
-    margin: 20px;
-    margin-bottom: 40px;
-}
 .rating-card{
+    display: block;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     flex-direction: column;
-    background:  hsl(213, 19%, 18%); 
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(207, 19%, 12%));
     border-radius: 20px;
     width: min-content;
-}
-#gradient{
-    background: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(207, 19%, 12%));
 }
 .star-icon{
     margin: 20px;
@@ -108,31 +101,31 @@ h1{
 /* thank you card */
 .thank-you-card{
     display: flex;
+    z-index: 0;
     flex-direction: column;
-    z-index: 100;
     text-align: center;
     align-items: center;
-    background:  hsl(213, 19%, 18%); 
+    background: radial-gradient(circle at top, hsl(213, 19%, 18%), hsl(207, 19%, 12%));
     border-radius: 20px;
     width: min-content;
 }
 .image{
-    margin: 100px;
+    margin: 90px;
     margin-top: 40px;
     margin-bottom: 20px;
 }
 .you-selected{
-    text-align: center;
     color: hsl(25, 97%, 53%);
     width: 200px;
-    height: 25px;
+    height: 30px;
     padding-top: 10px;
     margin-bottom: 20px;
     background: hsl(217, 11%, 23%);
     border-radius: 100vw;
 }
-.you-selected p{
+p{
     color: hsl(217, 12%, 63%);
     font-size: 15px;
     margin: 20px;
+    margin-bottom: 40px;
 }
